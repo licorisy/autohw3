@@ -1,0 +1,1 @@
+[![Java CI with Gradle](https://github.com/licorisy/autohw3/actions/workflows/main.yml/badge.svg)](https://github.com/licorisy/autohw3/actions/workflows/main.yml)

@@ -39,10 +39,10 @@ public class Class {
 
     @Test
     public void shouldSubmitRequest() {
-        driver.findElements(By.cssSelector("[data-test-id='name'] input")).sendKeys("Дмитрий Дубровский");
-        driver.findElements(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79996660000");
-        driver.findElements(By.cssSelector("[data-test-id='agreement']")).click();
-        driver.findElements(By.cssSelector("[data-test-id='button']")).click();
+        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Дмитрий Дубровский");
+        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79996660000");
+        driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
+        driver.findElement(By.cssSelector(".button")).click();
         WebElement actualElement = driver.findElement(By.cssSelector("[data-test-id='order-success']"));
         String actualsText = actualElement.getText().trim();
         assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualsText);
